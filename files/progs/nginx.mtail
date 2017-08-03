@@ -11,7 +11,7 @@ counter http_response_size_bytes_sum by vhost, method, code, content_type
 /(?P<remote_addr>[0-9A-Za-z\.\-:]+) / +
 /- / +
 /(?P<remote_user>[0-9A-Za-z\-]+) / +
-/(?P<time_local>\[\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2} \+\d{4}\]) / +
+/(?P<time_local>\[\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2} [\-\+]\d{4}\]) / +
 /"(?P<request_method>[A-Z]+) (?P<request_uri>\S+) (?P<http_version>HTTP\/[0-9\.]+)" / +
 /(?P<status>\d{3}) / +
 /(?P<bytes_sent>\d+) / +
